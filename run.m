@@ -11,9 +11,9 @@ nbStates = {5, 10, 20};
 DR = {0, 1};
 numFrame = 200;
 
-for m = 2 : 2%length(mode)
-    for n = 2 : 2%length(nbStates)
-        for d = 1 : 1%length(DR)
+for m = 1 : length(mode)
+    for n = 1 : length(nbStates)
+        for d = 1 : length(DR)
             newfolder = ['results/', mode{m}, '_', int2str(nbStates{n}), 'GMM_',int2str(DR{d}),'DR'];
 %             if (exist(newfolder) == 0)                
                 disp(['Creating...    ', newfolder]);
